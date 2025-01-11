@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Server Error</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/08c0396a01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="main">
+        <div style="color: black;" class="container">
+
+            <div class="header">
+                <div class="logo">
+                    <p>Aesthetics Beauty Studio</p>
+                </div>
+                <div class="button-container">
+                    <a href=""><i style="font-size:18pt;"  class="fab fa-instagram"></i></a>
+                    <a href=""><i style="font-size:18pt;" class="fab fa-tiktok"></i></a>
+                    <a href="{{ url_for('main.index') }}"><button class="btn"><i class="fa-solid fa-house"></i> Home</button></a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="error_handling">
+                    <i style="font-size: 60pt;" class="fa-solid fa-triangle-exclamation"></i>
+                    <h1 style="font-size: 30pt; font-weight: 400;">500 - Internal Server Error</h1>
+                    <p>Something went wrong on our end. Please try again later.</p>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="top">
+                    <div class="payment-methods">
+                        <img src="{{ url_for('static', filename='img/Payfast by Network Logo Pack/Full-colour/Png/Payfast logo.png' ) }}" width="60px" alt="">
+                        <img src="{{ url_for('static', filename='img/Payment Methods Logo Pack/Mastercard/RGB/png/Master Card.png' ) }}" width="45px" alt="">
+                        <img src="{{ url_for('static', filename='img/Payment Methods Logo Pack/Capitec Pay/PNG/Capitec Pay - colour.png' ) }}" width="60px">
+                        <img src="{{ url_for('static', filename='img/Payment Methods Logo Pack/Mobicred/png/mobicred_logoMark_grp.png' ) }}" width="70px" alt="">
+                    </div>
+                    <div class="powered-by">
+                        <p style="font-size: 10pt;">Powered by</p>
+                        <img src="{{ url_for('static', filename='img/6-removebg-preview.crop.png' ) }}" width="90px" alt="">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p style="font-size: 10pt; text-transform: none; text-align: center">This booking system was built with care by Oriah Web Studios, exclusively for Aesthetics Beauty Studio.</p>
+                    <a href="">Terms & Policies</a>
+                </div>
+            </div>
+        </div>
+    </section>           
+</body>
+</html>

@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+body {
+    background-color: pink;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container {
+    height: 650px;
+    width: 1200px;
+    border-radius: 8px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.logo p {
+    font-size: 18pt;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 5px solid rgb(17, 17, 17);
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 1135px;
+}
+
+.updates {
+    width: 60%;
+}
+
+.updates h1 {
+    
+    font-size: 19pt;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    background-color: black;
+    color: palevioletred;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: palevioletred;
+    color: black;
+}
+
+
+
+.button-container a{
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-container a:hover {
+    color: palevioletred;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 40vh);
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+.find-us-info {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operating-hours h1 {
+    font-size: 40pt;
+    font-weight: 400;
+}
+
+.operating-hours p {
+    font-size: 15pt;
+    padding-top: 18px;
+    color: rgb(44, 44, 44);
+}
+
+.contact-us {
+    padding: 0 20px;
+    
+}
+
+.email {
+    text-decoration: none;
+    transition: all ease 0.3s;
+    font-size: 18pt;
+    color: rgb(44, 44, 44);
+    
+}
+
+.email:hover {
+    color: red;
+}
+
+
+.contact-info h1 {
+    font-size: 60pt;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-info p {
+    text-align: center;
+    max-width: 700px;
+    font-size: 15pt;
+    color: rgb(44, 44, 44);
+}
+
+.app-btn {
+    background-color: palevioletred !important;
+    color: black !important;
+}
+
+.app-btn:hover {
+    color: black !important;
+}
+
+.home button {
+    background-color: black;
+    color: palevioletred;
+    border: none;
+    padding: 40px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    width: 350px;
+    font-size: 12pt;
+}
+
+.home button:hover {
+    background-color: palevioletred;
+    color: black;
+    transform: scale(0.95);
+}
+
+.info-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    text-align: center;
+}
+
+.booking-form {
+    width: 500px;
+    overflow-y: auto;
+    height: calc(100vh - 55vh);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.booking-form::-webkit-scrollbar {
+    display: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-control {
+    padding: 15px;
+    background-color: pink;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form-control::placeholder {
+    background-color: pink;
+}
+
+::selection {
+    background-color: palevioletred;
+    color: black;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Confirmation Page */
+.confirm-booking {
+    width: 800px;
+}
+
+
+.confirmation-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    color: black;
+}
+
+.confirmation-details p {
+    font-size: 11pt;
+    margin-top: 10px;
+}
+
+.confirm-booking h1 {
+    font-size: 20pt;
+    font-weight: 400;
+    color: black;
+}
+
+.error_handling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer {
+    border-top: 2px solid rgb(17, 17, 17);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white; 
+    background-color: black;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    transition: all 0.3s ease;
+}
+
+.bottom a:hover {
+    color: white;
+}
+
+.powered-by {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+

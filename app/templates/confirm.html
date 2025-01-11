@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetics Beauty Studios | Confirm Booking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/08c0396a01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="main">
+        <div style="color: black;" class="container">
+
+            <div class="header">
+                <div class="logo">
+                    <p>Aesthetics Beauty Studio</p>
+                </div>
+                <div class="button-container">
+                    <a href=""><i style="font-size:18pt;"  class="fab fa-instagram"></i></a>
+                    <a href=""><i style="font-size:18pt;" class="fab fa-tiktok"></i></a>
+                    <a href="{{ url_for('main.index') }}"><button class="btn"><i class="fa-solid fa-house"></i> Home</button></a>
+                    
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="confirm-booking">
+                    <h1><i class="fa-solid fa-check"></i> Confirm Appointment</h1>
+                    <div class="confirmation-details">
+                        <div class="info-headers">
+                            <p><strong>Full Name:</strong></p>
+                            <p><strong>Email:</strong></p>
+                            <p><strong>Cell Number:</strong></p>
+                            <p><strong>Selected Service:</strong></p>
+                            <p><strong>Date:</strong></p>
+                            <p><strong>Time:</strong></p>
+                        </div>
+                        <div class="info">
+                            <p>{{ booking_data.full_name }}</p>
+                            <p>{{ booking_data.email }}</p>
+                            <p>{{ booking_data.cell_number }}</p>
+                            <p>{{ booking_data.selected_service }}</p>
+                            <p>{{ booking_data.date }}</p>
+                            <p>{{ booking_data.time }}</p>
+                        </div>
+                    </div>
+                    <form style="margin-top: 20px;" class="link-container" action="{{ url_for('main.booking_confirmation') }}" method="POST"> 
+                        <button class="btn" type="submit" name="pay_later">Pay Later</button>
+                        <button class="btn" type="submit" name="pay_now">Pay Now</button>
+                        <button class="btn" type="submit" name="cancel">Cancel Booking</button>
+                    </form>
+                    <p style="margin-top: 20px; color: red; font-size: 10pt;"><i class="fa-solid fa-circle-info"></i> If you click "Confirm Booking And Pay Now", you will be redirected to Payfast's secure payment gateway.</p>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="top">
+                    <div class="payment-methods">
+                        <img src="{{ url_for('static', filename='img/Payfast by Network Logo Pack/Full-colour/Png/Payfast logo.png' ) }}" width="60px" alt="">
+                        <img src="{{ url_for('static', filename='img/Payment Methods Logo Pack/Mastercard/RGB/png/Master Card.png' ) }}" width="45px" alt="">
+                        <img src="{{ url_for('static', filename='img/Payment Methods Logo Pack/Capitec Pay/PNG/Capitec Pay - colour.png' ) }}" width="60px">
+                        <img src="{{ url_for('static', filename='img/Payment Methods Logo Pack/Mobicred/png/mobicred_logoMark_grp.png' ) }}" width="70px" alt="">
+                    </div>
+                    <div class="powered-by">
+                        <p style="font-size: 10pt;">Powered by</p>
+                        <img src="{{ url_for('static', filename='img/6-removebg-preview.crop.png' ) }}" width="90px" alt="">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p style="font-size: 10pt; text-transform: none; text-align: center">This booking system was built with care by Oriah Web Studios, exclusively for Aesthetics Beauty Studio.</p>
+                    <a href="">Terms & Policies</a>
+                </div>
+            </div>
+        </div>
+    </section>           
+</body>
+</html>
